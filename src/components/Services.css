@@ -1,0 +1,149 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 10px auto;
+    line-height: 1.4;
+    /* width: 90%; */
+    
+  }
+  
+  .about-left {
+    /* flex: 1;
+    padding-right: 20px; */
+    flex-basis: 56%;
+    position: relative;
+  }
+  
+  .about-right {
+    /* flex: 2; */
+    flex-basis: 40%;
+  }
+  
+  .about h1 {
+    font-weight: 600;
+    font-size: 30px; /* Changed from font-weight to font-size */
+    color: #212121;
+  }
+
+  /* .about p{
+
+  }
+   */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .about img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .about p{
+    color: #212121;
+    margin-bottom: 15px;
+  }
+
+  .about ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 5px;
+    font-size: 18px;
+    color: #212121;
+  }
+  .mySlides {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  @media (max-width: 800px){
+    .about{
+      flex-direction: column;
+    }
+    .about-left{
+      flex-basis: 100%;
+      margin: 20px;
+    }
+    .about-right{
+      flex-basis: 100%;
+
+    }
+  }
