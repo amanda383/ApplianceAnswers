@@ -8,7 +8,7 @@ import fb_icon from '../assets/Facebook icon.png'
 
 const Contact = () => {
     useEffect(() => {
-      const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API;
+      const apiKey = `{process.env.REACT_APP_GOOGLE_MAPS_API}`;
     
         // Load Google Maps API script dynamically
         const script = document.createElement('script');
