@@ -22,8 +22,9 @@ const App = () => {
         <Titles title='Contact Us'/>
         <Contact/>
         <Footer/>
+        
       </div>
-      
+   
     </div>
   )
 }

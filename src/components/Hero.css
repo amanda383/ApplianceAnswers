@@ -1,9 +1,7 @@
-/* Hero.css */
-
 .Hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../assets/background.png');
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7));
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -11,8 +9,12 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    transition: background-image 0.5s ease-in-out;
 }
 
+.Hero.loaded {
+    background-image: url('../assets/background.png');
+}
 
 .hero-text {
     text-align: center;

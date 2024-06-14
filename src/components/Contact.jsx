@@ -8,9 +8,11 @@ import fb_icon from '../assets/Facebook icon.png'
 
 const Contact = () => {
     useEffect(() => {
+      const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API;
+    
         // Load Google Maps API script dynamically
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBzRQYZg3bJi9SJzRag7itBnL9fwv8ulKA&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
         script.defer = true;
         script.async = true;
         window.initMap = initMap;
@@ -30,7 +32,7 @@ const Contact = () => {
           });
         }
       }, []);
-
+      console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
   return (
     <div className='contact'>
       <div className="contact-col">

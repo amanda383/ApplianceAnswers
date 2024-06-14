@@ -16,7 +16,7 @@ const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
     mobileMenu? setMobileMenu(false) : setMobileMenu(true);
-  };
+  }; 
 
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
@@ -28,7 +28,9 @@ const Navbar = () => {
         <li><Link to='contact' smooth={true} offset={-260} duration={500} className='btn'>Contact Us</Link></li>
       </ul>
       <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
+      
     </nav>
+    
   );
 };
 
